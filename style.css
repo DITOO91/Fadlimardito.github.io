@@ -1,0 +1,279 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(/asset/image/Animated\ Shape.svg);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-size: cover;
+}
+.logo {
+    width: 100px;
+    height: auto;
+    padding-left: 20px;
+    padding-top: 15px;
+    display: inline-block;
+
+}
+nav {
+    background-color:white;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
+ul {
+    float: right;
+    margin-right: 40px;
+    list-style: none;
+    overflow: hidden;
+}
+ul li {
+    display: inline-block;
+    line-height: 90px;
+    margin: 0 10px;
+}
+ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color:  rgb(97, 125, 247);
+    padding: 20px;
+    padding-top: 22px;
+    margin: 5px;
+    transition: all 1s ease;
+    border-bottom: 2.1px solid transparent;
+    background: fixed;
+    font-weight: bolder;
+}
+ul li a:hover {
+    background-color: rgb(2, 23, 40);
+    border-radius: 60px;
+}
+main {
+    overflow: auto;
+}
+label #btn,
+label #close {
+    color: rgb(14, 15, 16);
+    font-size: 30px;
+    float: right;
+    margin-right: 40px;
+    line-height: 90px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+.Bootstrap {
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    justify-content: center;
+}
+div {
+    margin: 10px;
+    padding: 20px;
+    width: 76%;
+}
+.hero {
+    text-align: center;
+    padding-left: 50px;
+}
+h1 {
+    margin-top: 10px;
+    padding-top: 45px;
+    font-weight: bolder;
+    font-size: 80px;
+}
+.ditoo {
+    width: 40%;
+    height: auto;
+    border-radius: 50%;
+    border-top:13px solid #00ABFF;
+    border-right:13px solid #00ABFF ;
+    border-bottom:13px solid #00ABFF;
+    border-left:13px solid #00ABFF;
+    width:260px;
+    height:260px; 
+
+}
+.card {
+    background-color:  rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    margin-left: 35px;
+    margin-bottom: 30px;
+    padding-bottom: 80px;
+}
+aside {
+    float: right;
+    width: 30%;
+    display: block;
+    margin-top: 100px;
+    padding-top: 60px;
+
+}
+.cardd {
+    top: 80px;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    margin-right: 20px;
+    width: 290px;
+}
+#Aboutme {
+    padding-left: 5px;
+    margin: 4px;
+}
+footer {
+    background-color: black;
+    display: block;
+    width: 100%;
+    height: 80px;
+    color: white;
+}
+center {
+    display: block;
+    padding-top: 35px;
+}
+.info {
+    font-family: sans-serif;
+    font-size: 15px;
+    background: #22a4cf;
+    color: white;
+    border: rgb(0, 0, 0) 3px solid;
+    border-radius: 10px;
+    padding: 12px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    float: inline-end;
+}
+.info:hover {
+    background-color: #041f28;
+}
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 30px;
+    display: none;
+    right: 15%;
+    background: rgb(0, 197, 247) !important;
+    border-radius: 5px;
+    width: 25px;
+    height: auto;
+    border: #313131 6px solid;
+    padding: 4px;
+    font-size: 15px;
+}
+.social {
+    display: inline;
+    padding: 10px;
+    margin-left: 25px;
+}
+@media screen and (max-width: 960px) {
+    label #btn{
+        display: block;
+
+    }
+    nav {
+        position: fixed;
+        overflow: hidden;
+        width: 100%;
+        top: 0;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 70vh;
+        margin-right: 0;
+        right: -100%;
+        text-align: center;
+        top: 90px;
+        background-color: rgb(0, 0, 0);
+        display: block;
+        transition: .5s;
+    }
+    ul li {
+        display: block;
+        line-height: 10px;
+        margin: 50px 0;
+    }
+    a {
+        padding: 10px;
+        display: block;
+    }
+    #check:checked ~ ul {
+        right: 0;
+        
+    }
+    #check:checked ~ label #btn {
+        display: none;
+    }
+    #check:checked ~label #close {
+        display: block;
+    }
+    h1 {
+        font-weight: bold;
+        font-size: 40px;
+        font-family: 'Courier New', Courier, ;
+    }
+    .cardd {
+        float: left;
+        display: block;
+        padding-left: 35px;
+        position: sticky;
+        margin-left: 16px;
+        width: auto;
+    }
+    .card {
+        margin: 0;
+        width: auto;
+        margin-bottom: 5px;
+    }
+    div {
+        width: auto;
+    }
+    .hero {
+        text-align: center;
+        width: auto;
+        font-size: large;
+        font-weight: 50%;
+        padding-left: 25px;
+    }
+    .ditoo {
+        width: 60%;
+        height: auto;
+        justify-content: center;
+        margin: 40px;
+    }
+    aside {
+        float: left;
+        width: 100%;
+        height: auto;
+        display: block;
+        position: -webkit-sticky;
+    }
+    .back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 50px;
+    display: none;
+    right: 15%;
+    background: rgb(2, 160, 252) !important;
+    border: none;
+    border-radius: 5px;
+    width: 15px;
+    height: auto;
+    float: right;
+    border: #050606 5px solid;
+    }
+    .social {
+        margin: 0;
+        padding: 10px;
+    }
+
+    
+}
