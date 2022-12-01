@@ -118,7 +118,7 @@ aside {
 }
 .cardd {
     top: 80px;
-    position: fixed;
+    position: static;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 20px;
     margin-right: 20px;
