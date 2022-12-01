@@ -118,7 +118,7 @@ aside {
 }
 .cardd {
     top: 80px;
-    position: static;
+    position: fixed;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 20px;
     margin-right: 20px;
@@ -222,7 +222,7 @@ center {
     }
     .cardd {
         float: left;
-        display: block;
+        display: static;
         padding-left: 35px;
         position: sticky;
         margin-left: 16px;
