@@ -222,9 +222,9 @@ center {
     }
     .cardd {
         float: left;
-        display: static;
+        display: block;
         padding-left: 35px;
-        position: sticky;
+        position: static;
         margin-left: 16px;
         width: auto;
     }
