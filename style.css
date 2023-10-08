@@ -116,6 +116,7 @@ aside {
     float: right;
     width: 30%;
     display: block;
+    margin-top: 100px;
     padding-top: 60px;
 
 }
@@ -258,6 +259,7 @@ center {
         width: 100%;
         height: auto;
         display: block;
+        margin-top: 0;
         position: -webkit-sticky;
     }
     .back-to-top {
