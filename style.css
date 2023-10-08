@@ -168,9 +168,10 @@ center {
     border-radius: 5px;
     width: 25px;
     height: auto;
-    border: #313131 6px solid;
+    border: 6px black solid;
     padding: 4px;
-    font-size: 15px;
+    font-size: 30px;
+    margin-top: 20px;
 }
 .social {
     display: inline;
@@ -272,7 +273,8 @@ center {
     width: 15px;
     height: auto;
     float: right;
-    border: #050606 5px solid;
+    border: 5px black solid;
+    margin-top: 20px;
     }
     .social {
         margin: 0;
