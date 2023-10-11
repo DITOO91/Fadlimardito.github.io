@@ -146,6 +146,7 @@ center {
 }
 .infoo {
     font-family: sans-serif;
+    margin-right: 80px;
     font-size: 15px;
     background: #22a4cf;
     color: white;
@@ -157,8 +158,21 @@ center {
     text-decoration: none;
     float: inline-end;
 }
-.info:hover {
+.infoo:hover {
     background-color: #041f28;
+}
+.info {
+    font-family: sans-serif;
+    font-size: 15px;
+    background: #22a4cf;
+    color: white;
+    border: rgb(0, 0, 0) 3px solid;
+    border-radius: 10px;
+    padding: 12px 20px;
+    margin-top: 10px;
+    widht: 30px;
+    text-decoration: none;
+    float: inline-end;
 }
 .back-to-top {
     cursor: pointer;
