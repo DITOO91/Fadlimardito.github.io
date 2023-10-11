@@ -146,6 +146,7 @@ center {
 }
 .info:hover {
     background-color: #041f28;
+    color: black;
     font-color: black;
 }
 .info {
@@ -158,7 +159,7 @@ center {
     padding: 12px 20px;
     margin-top: 10px;
     widht: 30px;
-    margin-right: 140px;
+    margin-right: 290px;
     text-decoration: none;
     float: inline-end;
 }
@@ -284,6 +285,9 @@ center {
     .social {
         margin: 0;
         padding: 10px;
+    }
+    .info{
+        margin-right: 100px;
     }
 
     
