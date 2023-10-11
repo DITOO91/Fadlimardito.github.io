@@ -152,6 +152,7 @@ center {
     border-radius: 10px;
     padding: 12px 20px;
     margin-top: 10px;
+    widht: 30px;
     text-decoration: none;
     float: inline-end;
 }
