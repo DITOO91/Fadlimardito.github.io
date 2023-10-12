@@ -1,42 +1,37 @@
-  // Membuat scroll halus dengan JavaScript
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
+// Membuat scroll halus dengan JavaScript
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
 
-        const targetId = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
+    const targetId = this.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
 
-        window.scrollTo({
-          top: targetElement.offsetTop,
-          behavior: 'smooth'
-        });
-      });
+    window.scrollTo({
+      top: targetElement.offsetTop,
+      behavior: 'smooth'
     });
+  });
+});
 
-
-$(document).ready(function () {
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 50) {
-      $("#back-to-top").fadeIn();
-      $(".navbar-right.navbar-r").css("margin-top", 14);
-      $(".navbar-brand img").css("width", 195);
+document.addEventListener('DOMContentLoaded', function () {
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 50) {
+      document.getElementById("back-to-top").style.display = "block";
+      document.querySelector(".navbar-right.navbar-r").style.marginTop = "14px";
+      document.querySelector(".navbar-brand img").style.width = "195px";
     } else {
-      $("#back-to-top").fadeOut();
-      $(".navbar-right.navbar-r").css("margin-top", 17);
-      $(".navbar-brand img").css("width", 230);
+      document.getElementById("back-to-top").style.display = "none";
+      document.querySelector(".navbar-right.navbar-r").style.marginTop = "17px";
+      document.querySelector(".navbar-brand img").style.width = "230px";
     }
   });
-  // scroll body to 0px on click
-  $("#back-to-top").click(function () {
-    $("#back-to-top").tooltip("hide");
-    $("body,html").animate(
-      {
-        scrollTop: 0,
-      },
-      800
-    );
-    return false;
+
+  // Scroll ke atas saat tombol diklik
+  document.getElementById("back-to-top").addEventListener('click', function () {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
   });
 
-  $("#back-to-top").tooltip("show");
+  // Menampilkan tooltip pada tombol
+  document.getElementById("back-to-top").setAttribute("title", "Back to Top");
 });
