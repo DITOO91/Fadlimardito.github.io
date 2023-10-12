@@ -89,6 +89,8 @@ label #close {
 .hero {
     text-align: center;
     padding-left: 50px;
+    padding-bottom: 30px;
+    background-color: black;
 }
 h1 {
     margin-top: 10px;
