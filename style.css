@@ -44,7 +44,7 @@ ul {
 }
 ul li {
     display: inline-block;
-    line-height: 90px;
+    line-height: 60px;
     margin: 0 10px;
 }
 ul li a {
